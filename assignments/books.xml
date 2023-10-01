@@ -1,3 +1,9 @@
+<!--Assignment is to create an XML file that stores data for a library.
+The library has two catalogues (technical books and cookery books).
+Each catalogue contains two books, each book has an ISBN, title and author.
+Student: Eleanor Sammon-->
+
+
 <library>
     <catalogue type="technical_books">
         <book>
