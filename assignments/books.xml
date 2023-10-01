@@ -1,0 +1,27 @@
+<library>
+    <catalogue type="technical_books">
+        <book>
+            <ISBN>123456789</ISBN>
+            <title>Parachuting</title>
+            <author>Hugo First</author>
+        </book>
+        <book>
+            <ISBN>234567891</ISBN>
+            <title>Mosquito Bites</title>
+            <author>Ivan Itch</author>
+        </book>
+    </catalogue>
+
+    <catalogue type="cookery_books">
+        <book>
+            <ISBN>345678912</ISBN>
+            <title>Baking Bad</title>
+            <author>Aaron Paul</author>
+        </book>
+        <book>
+            <ISBN>456789123</ISBN>
+            <title>Eat the Rich</title>
+            <author>Hannibal Lecter</author>
+        </book>
+    </catalogue>
+</library>
