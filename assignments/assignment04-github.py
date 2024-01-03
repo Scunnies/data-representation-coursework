@@ -1,4 +1,6 @@
 # read a text file from my Github repository, change all instances of Andrew to Eleanor and push back to Github
+# file andrew.txt accompanies this file
+# student: Eleanor Sammon
 
 import git
 import requests
@@ -6,8 +8,8 @@ from config import config as cfg # to store my API key and keep it private, this
 
 def update_file_content(repo_url, file_path, old_text, new_text, github_token):
     # Get current content of the file from GitHub
-    raw_url = f'{repo_url}/raw/main/{file_path}'
-    response = requests.get(raw_url, headers={'Authorization': f'token {github_token}'})
+    raw_url = f'{repo_url}/raw/main/{file_path}' #fetch raw content to interact with Github API
+    response = requests.get(raw_url, headers={'Authorisation': f'token {github_token}'})
     
     if response.status_code == 200:
         current_content = response.text
@@ -25,7 +27,7 @@ def update_file_content(repo_url, file_path, old_text, new_text, github_token):
         }
         
         # PUT request to update the file content
-        update_response = requests.put(update_url, json=data, headers={'Authorization': f'token {github_token}'})
+        update_response = requests.put(update_url, json=data, headers={'Authorisation': f'token {github_token}'})
         
         if update_response.status_code == 200:
             print("File updated successfully.")
